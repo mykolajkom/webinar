@@ -69,12 +69,14 @@
                 <div class="pay__first-card-col">
                     <label>
                         Введіть номер картки*
-                        <input type="text" required name="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
+                        <input type="tel" name="cardNumber" inputmode="numeric" pattern="[0-9\s]{16}"
+                        required maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                     </label>
                     <div>
                         <label>
                             Термін дії*
-                            <input type="text" required name="cardExpire" placeholder="xx/xx">
+                            <input type="tel" required name="cardExpire" inputmode="numeric" pattern="[0-9\s]{4}"
+                            required maxlength="4" placeholder="xx/xx">
                         </label>
                         <label>
                             CVV*
